@@ -13,16 +13,11 @@ $(function () {
 		$('.loader_bg').fadeToggle();
 	}, 1500);
 
-	/* JQuery Menu (meanmenu - responsive)
+	/* JQuery Menu
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
-		if ($.fn.meanmenu && $('header nav').length) {
-			$('header nav').meanmenu({
-				meanMenuContainer: '.menu-area',
-				meanScreenWidth: '767'
-			});
-		}
+		$('header nav').meanmenu();
 	});
 
 	/* Tooltip
